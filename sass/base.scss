@@ -1,0 +1,52 @@
+/*----------------------------------------    重置样式     ---------------------------------------- */
+
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,div{margin:0;padding:0}
+body{font:12px "宋体","Arial Narrow",HELVETICA;background:#fff;}
+a{color:#172c45;text-decoration:none}
+a:hover{color:#cd0200;text-decoration:underline}
+em{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+.ind{text-indent:2em}
+.ind10{text-indent:10px;}
+.noborder{border:0;}
+input,button,select{outline: none;border: 0;}
+select {
+              appearance:none;
+     -moz-appearance:none;
+  -webkit-appearance:none;
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }
+.inner{
+    width: 960px;
+    margin: 0 auto;
+}
+.sideA{
+    float: left;
+}
+.sideB{
+    float: right;
+}
+
+ul li{
+    float: left;
+}
+
+a:hover{
+    color: #E50012;
+    text-decoration: underline;
+}
+
+
+
+/*----------------------------------------       ----------------------------------------*/
+
+
+
+
+
+
+
