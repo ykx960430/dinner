@@ -1,3 +1,5 @@
+$innerW : 960px;
+
 /*----------------------------------------    重置样式     ---------------------------------------- */
 
 body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,div{margin:0;padding:0}
@@ -24,10 +26,10 @@ select::-ms-expand { display: none; }
     width: 960px;
     margin: 0 auto;
 }
-.sideA{
+.fl{
     float: left;
 }
-.sideB{
+.fr{
     float: right;
 }
 
@@ -40,7 +42,10 @@ a:hover{
     text-decoration: underline;
 }
 
-
+inner{
+  width: $innerW;
+  margin: 0 auto;
+}
 
 /*----------------------------------------       ----------------------------------------*/
 

@@ -1,0 +1,292 @@
+$innerW : 960px;
+$headerH: 38px;
+$headerBg: #160b00;
+$headerPadding: 50px;
+$bannerH: 112px;
+$logoH: 80px;
+$menuLiGap: 20px;
+
+body {
+    height: 9999px;
+    background: #f7f7f7;
+}
+
+
+header {
+    height: $headerH;
+    background: $headerBg;
+    padding: 0 $headerPadding;
+
+    h1 {
+        width: 125px;
+        height: $headerH;
+        float: left;
+
+        a {
+            color: #fff;
+            line-height: $headerH;
+        }
+    }
+    /*----------------------------------------    头部导航   ----------------------------------------*/
+    ul {
+        float: left;
+        li {
+            a {
+                padding: 0 38px;
+                line-height: $headerH;
+                color: #f1f1c4;
+                font-size: 12px;
+            }
+        }
+    }
+    .userInfo {
+        float: right;
+        color: #fff;
+        line-height: $headerH;
+    }
+    /*----------------------------------------    /头部导航   ----------------------------------------*/
+}
+
+
+
+
+
+/*----------------------------------------    banner   ----------------------------------------*/
+
+.banner {
+    height: $bannerH;
+    .inner {
+        height: 100%;
+        .fl {
+            width: 370px;
+            height: 100%;
+            position: relative;
+            .logo {
+                height: $logoH;
+                width: $logoH;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            h2 {
+                margin-left: $logoH;
+                margin-top: 30px;
+                padding-left: 10px;
+                color: #fff;
+                a {
+                    width: 136px;
+                    height: 24px;
+                    color: #fff;
+                    background: #54ce75;
+                    padding: 5px;
+                    border-radius: 5px;
+                    margin-left: 20px;
+                    font-size: 12px;
+                    font-style: normal;
+                }
+            }
+        }
+        .fr {
+            width: 420px;
+            height: 100%;
+            display: flex;
+            dl {
+                float: left;
+                flex: 1;
+                font-size: 12px;
+                line-height: 30px;
+                color: #fff;
+                text-align: center;
+                padding: 26px;
+            }
+            dd {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+
+
+
+/*----------------------------------------    /banner   ----------------------------------------*/
+
+
+/*----------------------------------------    sortBox   ----------------------------------------*/
+
+.sortBox {
+    .inner {
+        height: 50px;
+        line-height: 50px;
+        padding-bottom: 6px;
+        background: #fff;
+        ul {
+            float: left;
+            li {
+                color: #333;
+                padding: 0 35px;
+                cursor: pointer;
+            }
+        }
+        ol,
+        .searchBox {
+            float: right;
+        }
+        ol li {
+            float: left;
+            padding: 0 10px;
+            color: #333;
+            cursor: pointer;
+        }
+        li:hover,
+        .curren {
+            border-bottom: 2px solid #0089dc;
+            color: #0089dc;
+        }
+        .searchBox {
+            width: 214px;
+            height: 28px;
+            border: 1px solid #a9a9a9;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+
+            input {
+                width: 100%;
+                height: 100%;
+                padding-left: 5px;
+            }
+            button {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+
+
+
+/*----------------------------------------    /sortBox   ----------------------------------------*/
+
+
+/*----------------------------------------    menu   ----------------------------------------*/
+
+.menu {
+    margin-top: 15px;
+    .inner {
+        background: #fff;
+    }
+    ul {
+        padding: 12px;
+        overflow: hidden;
+        box-sizing:  border-box;
+        li {
+            width: 165px;
+            height: 24px;
+            line-height: 24px;
+            padding: 0 10px;
+            color: #666;
+            cursor: pointer;
+        }
+        li:hover,
+        .curren {
+            background: #0089dc;
+            color: #fff;
+        }
+    }
+}
+
+
+
+/*----------------------------------------    menu   ----------------------------------------*/
+
+
+/*----------------------------------------    floor   ----------------------------------------*/
+
+.floorBox {
+    .floor {
+        h3 {
+            font-size: 16px;
+            line-height: 50px;
+            color: #333;
+            span {
+                font-size: 12px;
+                font-weight: normal;
+                color: #999;
+            }
+        }
+        ul {
+            overflow: hidden;
+            li:nth-of-type(even){
+                margin-left: $menuLiGap;
+
+            }
+            li {
+                line-height: 26px;
+                width: ($innerW - $menuLiGap - 4) / 2;
+                position: relative;
+                margin-bottom: 15px;
+                background: #fff;
+                border: 1px solid #eee;
+
+                img {
+                    width: 100px;
+                    float: left;
+                    margin-right: 12px;
+                }
+
+                .menuInfo{
+                    float: left;
+                    h4 {
+                        font-size:  20px;
+                        margin-top: 10px;
+                        color: #333;
+
+                        span {
+                            font-size: 12px;
+                            font-weight: normal;
+                            color: #99b2d8;
+                        }
+                    }
+                    .appraise {
+                        /* float: left; */
+                        color: #99b2d8;
+                    }
+                    .price{
+                        font-size: 20px;
+                        color: #f74342;
+                        font-weight: 600;
+                        font-style: italic;
+                        /* clear: both; */
+                    }
+                }
+
+                .joinToCar{
+                    width: 74px;
+                    height: 22px;
+                    line-height: 22px;
+                    color: #fff;
+                    display: block;
+                    background: #0089dc;
+                    position: absolute;
+                    right: 10px;
+                    bottom: 10px;
+                    text-align: center;
+                    border-radius: 11px;
+                }
+                .joinToCar:hover{
+                    background: coral;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*----------------------------------------    /floor   ----------------------------------------*/
