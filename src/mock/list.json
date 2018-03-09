@@ -1,0 +1,796 @@
+{
+    "menus": [
+    {
+        "name": "热销",
+        "floor":
+        {
+            "floorInfo": "大家喜欢吃，才叫真的好吃",
+            "floors": [
+            {
+                "mid": "ts_01",
+                "img": "../images/01.jpg",
+                "name": "珍珠米饭",
+                "title": "粒粒清香，颗颗饱满。",
+                "info": "月售784份",
+                "price": 2
+            },
+            {
+                "mid": "ts_02",
+                "img": "../images/02.jpg",
+                "name": "小米南瓜粥",
+                "title": "粒粒清香，颗颗饱满。",
+                "info": "月售784份",
+                "price": 2
+            },
+            {
+                "mid": "ts_03",
+                "img": "../images/03.jpg",
+                "name": "菜心玉米粥",
+                "title": "口感清淡，富含丰富蔬菜维生素和粗粮膳食纤维。",
+                "info": "月售216份",
+                "price": 13
+            },
+            {
+                "mid": "ts_04",
+                "img": "../images/04.jpg",
+                "name": "烂肉豇豆",
+                "title": "",
+                "info": "月售210份",
+                "price": 18
+            },
+            {
+                "mid": "ts_05",
+                "img": "../images/05.jpg",
+                "name": "杂菜煲",
+                "title": "你想要的蔬菜都在这里了",
+                "info": "月售170份",
+                "price": 22
+            },
+            {
+                "mid": "ts_06",
+                "img": "../images/06.jpg",
+                "name": "茄角之恋",
+                "title": "绝佳的烹饪搭配，吃一口感受初恋的味道",
+                "info": " 月售169份",
+                "price": 19
+            },
+            {
+                "mid": "ts_07",
+                "img": "../images/07.jpg",
+                "name": "翡翠锅摊",
+                "title": "鲜嫩翠绿刺激食欲，喜欢你没道理。",
+                "info": "月售144份",
+                "price": 9
+            },
+            {
+                "mid": "ts_08",
+                "img": "../images/08.jpg",
+                "name": "爆汁流沙包",
+                "title": "香浓丝滑，唇齿留香，轻轻一口，喜欢你没道理！",
+                "info": "月售138份",
+                "price": 10
+            },
+            {
+                "mid": "ts_09",
+                "img": "../images/09.jpg",
+                "name": "油渣莲白",
+                "title": "肥而不腻，清爽下饭。",
+                "info": "月售134份",
+                "price": 19
+            },
+            {
+                "mid": "ts_10",
+                "img": "../images/10.jpg",
+                "name": "红薯百合粥",
+                "title": "甜糯芬香，纯天然食材的完美搭配",
+                "info": "月售112份",
+                "price": 15
+            }]
+        }
+    },
+    {
+        "name": "川调特色",
+        "floor":
+        {
+            "floorInfo": "",
+            "floors": [
+            {
+                "mid": "chuan_01",
+                "img": "../images/chuan_01.jpg",
+                "name": "鱼翅黄金糕",
+                "title": "色泽金黄，口感绝佳。",
+                "info": "月售42份",
+                "price": 10
+            },
+            {
+                "mid": "chuan_02",
+                "img": "../images/chuan_02.jpg",
+                "name": "煎饺",
+                "title": "色泽金黄，口感香脆，食之鲜香美味",
+                "info": "月售79份",
+                "price": 12
+            }]
+        }
+    },
+    {
+        "name": "女神养颜粥",
+        "floor":
+        {
+            "floorInfo": "",
+            "floors": [
+            {
+                "mid": "nv_01",
+                "img": "../images/nv_01.jpg",
+                "name": "红薯百合粥",
+                "title": "甜糯芬香，纯天然食材的完美搭配，具有减肥和养颜的功效",
+                "info": "月售112份",
+                "price": 15
+            },
+            {
+                "mid": "nv_02",
+                "img": "../images/nv_02.jpg",
+                "name": "小米南瓜粥",
+                "title": "一种低热量，养胃的主食。",
+                "info": "月售223份",
+                "price": 16
+            },
+            {
+                "mid": "nv_03",
+                "img": "../images/nv_03.jpg",
+                "name": "养身黑芝麻粥",
+                "title": "补肝肾、润五脏、益气力还有健胃、保肝",
+                "info": "月售73份",
+                "price": 13
+            },
+            {
+                "mid": "nv_04",
+                "img": "../images/nv_04.jpg",
+                "name": "山珍野菌粥",
+                "title": "真正的营养养生粥品，纯天然，美味健康，你值得拥有！",
+                "info": "月售31份",
+                "price": 31
+            }]
+        }
+    },
+    {
+        "name": "提神营养粥",
+        "floor":
+        {
+            "floorInfo": "",
+            "floors": [
+            {
+                "mid": "tishen_01",
+                "img": "../images/tishen_01.jpg",
+                "name": "山药排骨粥",
+                "title": "",
+                "info": "月售47份",
+                "price": 18
+            },
+            {
+                "mid": "tishen_02",
+                "img": "../images/tishen_02.jpg",
+                "name": "皮蛋瘦肉粥",
+                "title": "又名“败火粥”具有败火、降压、提高智力、促进肠胃",
+                "info": "月售329份",
+                "price": 16
+            },
+            {
+                "mid": "tishen_03",
+                "img": "../images/tishen_03.jpg",
+                "name": "菠菜猪肝粥",
+                "title": "补肝明目、养血、营养保健的猪肝搭配富含丰富元素",
+                "info": "月售59份",
+                "price": 13
+            },
+            {
+                "mid": "tishen_04",
+                "img": "../images/tishen_04.jpg",
+                "name": "青豆腊排粥",
+                "title": "降低血液中的胆固醇，及补肝养胃、滋补强壮、",
+                "info": "月售21份",
+                "price": 18
+            }]
+        }
+    },
+    {
+        "name": "海鲜宴遇粥",
+        "floor":
+        {
+            "floorInfo": "",
+            "floors": [
+            {
+                "mid": "haixian_01",
+                "img": "../images/haixian_01.jpg",
+                "name": "生滚鱼片粥",
+                "title": "鲜香美味，营养丰富，好吃不贵健康随行！",
+                "info": "月售29份",
+                "price": 16
+            },
+            {
+                "mid": "haixian_02",
+                "img": "../images/haixian_02.jpg",
+                "name": "海鲜粥",
+                "title": "内容丰富，鲜香顺滑，有补气益肾、健脾养胃、",
+                "info": "月售4份",
+                "price": 58
+            }]
+        }
+    },
+    {
+        "name": "素食主义者",
+        "floor":
+        {
+            "floorInfo": "",
+            "floors": [
+            {
+                "mid": "sushi_01",
+                "img": "../images/sushi_01.jpg",
+                "name": "菜心玉米粥",
+                "title": "口感清淡，富含丰富蔬菜维生素和粗粮膳食纤维",
+                "info": "月售216份",
+                "price": 13
+            },
+            {
+                "mid": "sushi_02",
+                "img": "../images/sushi_02.jpg",
+                "name": "五谷杂粮粥",
+                "title": "",
+                "info": "月售45份",
+                "price": 15
+            }]
+        }
+    },
+    {
+        "name": "川粤蒸品",
+        "floor":
+        {
+            "floorInfo": "",
+            "floors": [
+            {
+                "mid": "yue_01",
+                "img": "../images/yue_01.jpg",
+                "name": "爆汁流沙包",
+                "title": "香浓丝滑，唇齿留香，轻轻一口，喜欢你没道理！",
+                "info": "月售138份",
+                "price": 10
+            },
+            {
+                "mid": "yue_02",
+                "img": "../images/yue_02.jpg",
+                "name": "玻璃烧麦",
+                "title": "4个皮薄馅美，延承传统美食鲜香可口，浓郁饱满",
+                "info": "月售31份",
+                "price": 12
+            },
+            {
+                "mid": "yue_03",
+                "img": "../images/yue_03.jpg",
+                "name": "粉蒸牛肉",
+                "title": "鲜嫩美味的牛肉入口即化。",
+                "info": "月售76份",
+                "price": 18
+            }]
+        }
+    },
+    {
+        "name": "佐餐小菜",
+        "floor":
+        {
+            "floorInfo": "",
+            "floors": [
+            {
+                "mid": "xiaocai_01",
+                "img": "../images/xiaocai_01.jpg",
+                "name": "爽口豆皮",
+                "title": "口感浓郁，豆皮鲜香美味。",
+                "info": " 月售104份",
+                "price": 13
+            },
+            {
+                "mid": "xiaocai_02",
+                "img": "../images/xiaocai_02.jpg",
+                "name": "热拌鲫鱼",
+                "title": "16元/条",
+                "info": "月售73份",
+                "price": 16
+            },
+            {
+                "mid": "xiaocai_03",
+                "img": "../images/xiaocai_03.jpg",
+                "name": "剁椒口口脆",
+                "title": "青笋片保持原有的爽脆感，口口美味。",
+                "info": "月售40份",
+                "price": 15
+            },
+            {
+                "mid": "xiaocai_04",
+                "img": "../images/xiaocai_04.jpg",
+                "name": "滋味荞面",
+                "title": "适合肥胖症、高血压、糖尿病患者及中老年人经常食用。",
+                "info": "月售36份",
+                "price": 16
+            },
+            {
+                "mid": "xiaocai_05",
+                "img": "../images/xiaocai_05.jpg",
+                "name": "折耳根拌皮蛋",
+                "title": "热、解毒、治肠炎、中耳炎的折耳根搭配丝滑鲜嫩的皮蛋",
+                "info": "月售79份",
+                "price": 16
+            },
+            {
+                "mid": "xiaocai_06",
+                "img": "../images/xiaocai_06.jpg",
+                "name": "鸡蛋干拌豇豆",
+                "title": "菜色清新淡雅，食之感爽口清凉，不燥不腻",
+                "info": "月售37份",
+                "price": 16
+            },
+            {
+                "mid": "xiaocai_07",
+                "img": "../images/xiaocai_07.jpg",
+                "name": "鲜椒蒜泥白肉",
+                "title": "薄而不腻的肉片搭配浓郁清香的酱汁，丝滑爽口。",
+                "info": "月售24份",
+                "price": 29
+            },
+            {
+                "mid": "xiaocai_08",
+                "img": "../images/xiaocai_08.jpg",
+                "name": "川调冒烤鸭",
+                "title": "鸭的独有味道，经过川香的调制，口味与众不同。",
+                "info": "月售18份",
+                "price": 32
+            },
+            {
+                "mid": "xiaocai_09",
+                "img": "../images/xiaocai_09.jpg",
+                "name": "农家边骨肉",
+                "title": "农家肉鲜美，唇齿留香。",
+                "info": "月售13份",
+                "price": 26
+            },
+            {
+                "mid": "xiaocai_10",
+                "img": "../images/xiaocai_10.jpg",
+                "name": "香拌脆笋",
+                "title": "风味独特的菜肴，鲜美爽口。",
+                "info": "月售23份",
+                "price": 18
+            },
+            {
+                "mid": "xiaocai_11",
+                "img": "../images/xiaocai_11.jpg",
+                "name": "健康黑木耳",
+                "title": "燥、养血益胃、活血止血、润肺、润肠之选",
+                "info": "月售25份",
+                "price": 16
+            },
+            {
+                "mid": "xiaocai_12",
+                "img": "../images/xiaocai_12.jpg",
+                "name": "特色夫妻肺片",
+                "title": "色泽红亮，质地软嫩，口味麻辣浓香。",
+                "info": "月售10份",
+                "price": 36
+            },
+            {
+                "mid": "xiaocai_13",
+                "img": "../images/xiaocai_13.jpg",
+                "name": "烧椒牛肉",
+                "title": "",
+                "info": "月售15份",
+                "price": 36
+            },
+            {
+                "mid": "xiaocai_14",
+                "img": "../images/xiaocai_14.jpg",
+                "name": "BB酱鸭",
+                "title": "酱香十足，每一口都是精品。",
+                "info": "月售8份",
+                "price": 29
+            },
+            {
+                "mid": "xiaocai_15",
+                "img": "../images/xiaocai_15.jpg",
+                "name": "农家拌土鸡",
+                "title": "一口不过瘾再来一口。",
+                "info": "月售7份",
+                "price": 38
+            }]
+        }
+    },
+    {
+        "name": "特色点心",
+        "floor":
+        {
+            "floorInfo": "",
+            "floors": [
+            {
+                "mid": "dianxin_01",
+                "img": "../images/dianxin_01.jpg",
+                "name": "翡翠锅摊",
+                "title": "鲜嫩翠绿刺激食欲，喜欢你没道理。",
+                "info": "月售144份",
+                "price": 9
+            },
+            {
+                "mid": "dianxin_02",
+                "img": "../images/dianxin_02.jpg",
+                "name": "香煎玉米饼",
+                "title": "本味演绎纯天然绿色粗粮美食",
+                "info": "月售33份",
+                "price": 12
+            },
+            {
+                "mid": "dianxin_03",
+                "img": "../images/dianxin_03.jpg",
+                "name": "家乡红糖糕",
+                "title": "宫廷御膳名点，食之香甜松软，细腻弹牙，营养美味",
+                "info": "月售46份",
+                "price": 13
+            },
+            {
+                "mid": "dianxin_04",
+                "img": "../images/dianxin_04.jpg",
+                "name": "红糖糍粑",
+                "title": "甜味糯米小吃。",
+                "info": "月售16份",
+                "price": 15
+            },
+            {
+                "mid": "dianxin_05",
+                "img": "../images/dianxin_05.jpg",
+                "name": "川式叉烧煎包",
+                "title": "",
+                "info": "月售31份",
+                "price": 15
+            },
+            {
+                "mid": "dianxin_06",
+                "img": "../images/dianxin_06.jpg",
+                "name": "红糖锅魁",
+                "title": "口味香甜，历史悠久，地道的老成都味道。",
+                "info": "月售15份",
+                "price": 13
+            },
+            {
+                "mid": "dianxin_07",
+                "img": "../images/dianxin_07.jpg",
+                "name": "川西叶儿粑",
+                "title": "",
+                "info": "月售15份",
+                "price": 13
+            }]
+        }
+    },
+    {
+        "name": "赛红杏川菜",
+        "floor":
+        {
+            "floorInfo": "",
+            "floors": [
+            {
+                "mid": "saihong_01",
+                "img": "../images/saihong_01.jpg",
+                "name": " 茄角之恋 ",
+                "title": " 绝佳的烹饪搭配，吃一口感受初恋的味道 ",
+                "info": " 月售169份 ",
+                "price": 19
+            },
+            {
+                "mid": "saihong_02",
+                "img": "../images/saihong_02.jpg",
+                "name": " 杂菜煲 ",
+                "title": " 你想要的蔬菜都在这里了。 ",
+                "info": " 月售170份 ",
+                "price": 22
+            },
+            {
+                "mid": "saihong_03",
+                "img": "../images/saihong_03.jpg",
+                "name": " 油渣莲白 ",
+                "title": " 肥而不腻，清爽下饭。 ",
+                "info": " 月售134份 ",
+                "price": 19
+            },
+            {
+                "mid": "saihong_04",
+                "img": "../images/saihong_04.jpg",
+                "name": " 烂肉豇豆 ",
+                "title": "  ",
+                "info": " 月售210份 ",
+                "price": 18
+            },
+            {
+                "mid": "saihong_05",
+                "img": "../images/saihong_05.jpg",
+                "name": " 土豆丝 ",
+                "title": " 一根一跟晶晶亮，吃一根再来一根。 ",
+                "info": " 月售98份 ",
+                "price": 16
+            },
+            {
+                "mid": "saihong_06",
+                "img": "../images/saihong_06.jpg",
+                "name": " 蕃茄炒鸡蛋 ",
+                "title": "  ",
+                "info": " 月售85份 ",
+                "price": 20
+            },
+            {
+                "mid": "saihong_07",
+                "img": "../images/saihong_07.jpg",
+                "name": " 酱油炒饭 ",
+                "title": " 酱油爱上炒饭，不一样的搭配不一样的味道。 ",
+                "info": " 月售32份 ",
+                "price": 18
+            },
+            {
+                "mid": "saihong_08",
+                "img": "../images/saihong_08.jpg",
+                "name": " 杏鲍菇炒牛肉丝 ",
+                "title": " 牛肉的鲜嫩与杏鲍菇的柔韧完美结合，口感浓郁独特，回味无穷且营养健康 ",
+                "info": " 月售30份 ",
+                "price": 36
+            },
+            {
+                "mid": "saihong_09",
+                "img": "../images/saihong_09.jpg",
+                "name": " 青椒回锅肉 ",
+                "title": " 这个味道，吃一回想一回。 ",
+                "info": " 月售85份 ",
+                "price": 28
+            },
+            {
+                "mid": "saihong_10",
+                "img": "../images/saihong_10.jpg",
+                "name": " 葱椒芋儿鸡 ",
+                "title": " 口味浓郁鲜香，营养丰富具有增强人体免疫力，解毒防癌、美容乌发补血养气等功效 ",
+                "info": " 月售40份 ",
+                "price": 36
+            },
+            {
+                "mid": "saihong_11",
+                "img": "../images/saihong_11.jpg",
+                "name": " 蟹黄豆花 ",
+                "title": " 鲜、嫩、爽、滑演绎完美的艺术美食 ",
+                "info": " 月售50份 ",
+                "price": 29
+            },
+            {
+                "mid": "saihong_12",
+                "img": "../images/saihong_12.jpg",
+                "name": " 米凉粉烧牛肉 ",
+                "title": " 传统美食精品之作，为您呈现浓浓的乡土情缘，再现悠久饮食文化的魅力 ",
+                "info": " 月售21份 ",
+                "price": 38
+            },
+            {
+                "mid": "saihong_13",
+                "img": "../images/saihong_13.jpg",
+                "name": " 川调特色酸菜鱼 ",
+                "title": " 鱼肉鲜嫩，含丰富蛋白质及多种微量元素和生理活性物质，搭配以老坛酸菜，益脾开胃，营养价值高，老少皆宜 ",
+                "info": " 月售22份 ",
+                "price": 42
+            },
+            {
+                "mid": "saihong_14",
+                "img": "../images/saihong_14.jpg",
+                "name": " 青椒爆拱嘴 ",
+                "title": " 川菜界老江湖了，下酒下饭不二之选。 ",
+                "info": " 月售23份 ",
+                "price": 29
+            },
+            {
+                "mid": "saihong_15",
+                "img": "../images/saihong_15.jpg",
+                "name": " 小炒黄牛肉 ",
+                "title": " 肉的鲜美味和辅材的中和体，你记忆中的味道就在这里了。 ",
+                "info": " 月售12份 ",
+                "price": 38
+            },
+            {
+                "mid": "saihong_16",
+                "img": "../images/saihong_16.jpg",
+                "name": " 豆花肥肠 ",
+                "title": " 肥肠：“豆花，豆花”，豆花：“哎！” ",
+                "info": " 月售70份 ",
+                "price": 29
+            },
+            {
+                "mid": "saihong_17",
+                "img": "../images/saihong_17.jpg",
+                "name": " 下饭菜 ",
+                "title": " 你有饭吗？我有菜，你要吗？ ",
+                "info": " 月售13份 ",
+                "price": 22
+            },
+            {
+                "mid": "saihong_18",
+                "img": "../images/saihong_18.jpg",
+                "name": " 湘香豆角 ",
+                "title": " 湘味充盈，香味十足。 ",
+                "info": " 月售26份 ",
+                "price": 26
+            },
+            {
+                "mid": "saihong_19",
+                "img": "../images/saihong_19.jpg",
+                "name": " 豆花牛肉 ",
+                "title": "  ",
+                "info": " 月售8份 ",
+                "price": 38
+            },
+            {
+                "mid": "saihong_20",
+                "img": "../images/saihong_20.jpg",
+                "name": " 砂锅老豆腐 ",
+                "title": " 卤清而不淡，油香而不腻；食之香气扑鼻。 ",
+                "info": " 月售18份 ",
+                "price": 26
+            },
+            {
+                "mid": "saihong_21",
+                "img": "../images/saihong_21.jpg",
+                "name": " 酸菜笋丝 ",
+                "title": " 味的笋香搭配酸香可口的酸菜，这道烹饪我给满分。 ",
+                "info": " 月售15份 ",
+                "price": 26
+            },
+            {
+                "mid": "saihong_22",
+                "img": "../images/saihong_22.jpg",
+                "name": " 小炒双脆 ",
+                "title": " 一份爽口香脆的开胃小菜。 ",
+                "info": " 月售11份 ",
+                "price": 26
+            }]
+        }
+    },
+    {
+        "name": "金樽甘露",
+        "floor":
+        {
+            "floorInfo": "",
+            "floors": [
+            {
+                "mid": "drink_01 ",
+                "img": "../images/drink_01.jpg",
+                "name": " 可乐 ",
+                "title": " 凝神、爽心、增进消化的一款饮料。 ",
+                "info": " 月售9份 ",
+                "price": 5
+            },
+            {
+                "mid": "drink_02 ",
+                "img": "../images/drink_02.jpg",
+                "name": " 雪碧 ",
+                "title": " 透心凉，心飞扬。 ",
+                "info": " 月售10份 ",
+                "price": 5
+            },
+            {
+                "mid": "drink_03 ",
+                "img": "../images/drink_03.jpg",
+                "name": " 加多宝 ",
+                "title": " 一瓶好喝不上火的饮料。 ",
+                "info": " 月售1份 ",
+                "price": 8
+            },
+            {
+                "mid": "drink_04 ",
+                "img": "../images/drink_04.jpg",
+                "name": " 江小白 ",
+                "title": " 缘来简单的情绪饮料。 ",
+                "info": " 月售1份 ",
+                "price": 23
+            },
+            {
+                "mid": "drink_05 ",
+                "img": "../images/drink_05.jpg",
+                "name": " 五粮液歪嘴 ",
+                "title": " 口感挺好，小酒中的后起之秀。 ",
+                "info": " 月售1份 ",
+                "price": 25
+            },
+            {
+                "mid": "drink_06 ",
+                "img": "../images/drink_06.jpg",
+                "name": "歪嘴郎 ",
+                "title": "来一瓶“小歪”。 ",
+                "info": "月售1份 ",
+                "price": 23
+            },
+            {
+                "mid": "drink_07 ",
+                "img": "../images/drink_07.jpg",
+                "name": " 二锅头 ",
+                "title": " 一瓶二锅头，浇走你忧愁。 ",
+                "info": " 月售1份 ",
+                "price": 10
+            },
+            {
+                "mid": "drink_08 ",
+                "img": "../images/drink_08.jpg",
+                "name": " 勇闯 ",
+                "title": " 口味柔郁，一瓶不够来两瓶。 ",
+                "info": " 月售1份 ",
+                "price": 10
+            },
+            {
+                "mid": "drink_09 ",
+                "img": "../images/drink_09.jpg",
+                "name": " 百威纯生 ",
+                "title": "  ",
+                "info": " 月售0份 ",
+                "price": 15
+            },
+            {
+                "mid": "drink_10 ",
+                "img": "../images/drink_10.jpg",
+                "name": " 哈啤小麦王 ",
+                "title": "  ",
+                "info": " 月售1份 ",
+                "price": 8
+            },
+            {
+                "mid": "drink_11 ",
+                "img": "../images/drink_11.jpg",
+                "name": " 百威金樽 ",
+                "title": "  ",
+                "info": " 月售0份 ",
+                "price": 25
+            },
+            {
+                "mid": "drink_12 ",
+                "img": "../images/drink_12.jpg",
+                "name": " 百威啤酒 ",
+                "title": "  ",
+                "info": " 月售0份 ",
+                "price": 10
+            },
+            {
+                "mid": "drink_13 ",
+                "img": "../images/drink_13.jpg",
+                "name": " 王老吉 ",
+                "title": "  ",
+                "info": " 月售1份 ",
+                "price": 6
+            },
+            {
+                "mid": "drink_14 ",
+                "img": "../images/drink_14.jpg",
+                "name": " 农夫山泉 ",
+                "title": "  ",
+                "info": " 月售25份 ",
+                "price": 3
+            }]
+        }
+    },
+    {
+        "name": "一碗好米",
+        "floor":
+        {
+            "floorInfo": "",
+            "floors": [
+            {
+                "mid": "mi_01 ",
+                "img": "../images/mi_01.jpg",
+                "name": " 珍珠米饭 ",
+                "title": " 粒粒清香，颗颗饱满。 ",
+                "info": " 月售784份 ",
+                "price": 2
+            },
+            {
+                "mid": "mi_02 ",
+                "img": "../images/mi_02.jpg",
+                "name": " 打包盒 ",
+                "title": " 一个－满满的心意都在这里了。 ",
+                "info": " 月售18份 ",
+                "price": 1
+            }]
+        }
+    }]
+
+}

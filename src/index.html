@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="/css/base.css">
     <link rel="stylesheet" type="text/css" href="/css/index.css">
     <link rel="stylesheet" type="text/css" href="/font/iconfont.css">
+    <script type="text/javascript" src="lib/requirejs/require.js" data-main="js/index"></script>
     <script src="js/index.js"></script>
     <title>凯-Dome</title>
 </head>
@@ -22,8 +23,20 @@
         <a href="" class="userInfo">凯旋</a>
     </header>
     <!----------------------------------------    /header   ---------------------------------------->
-    <!----------------------------------------    banner   ---------------------------------------->
-    <div class="banner">
+
+    <!----------------------------------------    goto   ---------------------------------------->
+    <div class="goto">
+        <ul>
+            <li><i class="iconfont icon-wo"></i></li>
+            <li><i class="iconfont icon-gouwuchekong"></i></li>
+            <li><i class="iconfont icon-dingbu"></i></li>
+        </ul>
+    </div>
+    <!----------------------------------------    /goto   ---------------------------------------->
+
+
+    <!----------------------------------------    shopInfo   ---------------------------------------->
+    <div class="shopInfo">
         <div class="inner">
             <div class="fl">
                 <div class="logo"></div>
@@ -46,6 +59,11 @@
             </div>
         </div>
     </div>
+    <!----------------------------------------    /shopInfo   ---------------------------------------->
+    <!----------------------------------------    banner   ---------------------------------------->
+    <div class="banner">
+        <div class="inner"></div>
+    </div>
     <!----------------------------------------    /banner   ---------------------------------------->
     <!----------------------------------------    sortBox   ---------------------------------------->
     <div class="sortBox">
@@ -57,7 +75,7 @@
             </ul>
             <div class="searchBox">
                 <input type="text" class="search" placeholder="搜索美食..." />
-                <button type="">搜索</button>
+                <button type=""  class="iconfont icon-sousuo"></button>
             </div>
             <ol>
                 <li class="curren">默认排序</li>
@@ -70,8 +88,8 @@
     </div>
     <!----------------------------------------    /sortBox   ---------------------------------------->
     <!----------------------------------------    menu   ---------------------------------------->
-    <div class="menu">
-        <ul class="inner">
+    <div class="menu inner">
+        <ul>
             <li class="curren">热销</li>
             <li>本店特色</li>
             <li>女神养颜粥</li>
@@ -85,162 +103,100 @@
             <li>塞红杏川菜</li>
             <li>一碗好米</li>
         </ul>
+        <ol class="sideNav">
+            <li class="curren">热销</li>
+            <li>本店特色</li>
+            <li>女神养颜粥</li>
+            <li>提神营养粥</li>
+            <li>海鲜宴</li>
+            <li>素食主义者</li>
+            <li>川粤蒸品</li>
+            <li>佐食小菜</li>
+            <li>特色点心</li>
+            <li>金樽甘露</li>
+            <li>塞红杏川菜</li>
+            <li>一碗好米</li>
+        </ol>
     </div>
     <!----------------------------------------    /menu   ---------------------------------------->
     <!----------------------------------------    floor   ---------------------------------------->
     <div class="floorBox">
         <div class="inner">
-            <div class="floor">
+            <div class="floor"></div>
+
+
+
+
+<script type="text/html" id="floor">
+                {{each data as floorItem}}
                 <h3>
-                热销
-                <span>大家喜欢吃，才叫真的好吃</span>
-            </h3>
+                    {{floorItem.name}}
+                    <span>{{floorItem.floor.floorInfo}}</span>
+                </h3>
                 <ul>
+                    {{each floorItem.floor.floors as cate}}
                     <li>
-                        <img src="images/01.jpeg" alt="" />
+                        <div style="display: none;">{{cate.mid}}</div>
+                        <img src="{{cate.img}}" alt="" />
                         <div class="menuInfo">
                             <h4>
-                                珍珠米饭
-                                <span>粒粒清香，颗颗饱满</span>
+                                {{cate.name}}
                             </h4>
-                            <p class="appraise">*****（90）月售771份</p>
-                            <p class="price">¥2</p>
+                            <span>{{cate.title}}</span>
+                            <p class="appraise">{{cate.info}}</p>
+                            <p class="price">¥{{cate.price}}</p>
                         </div>
                         <a href="" class="joinToCar">加入购物车</a>
                     </li>
-                    <li>
-                        <img src="images/01.jpeg" alt="" />
-                        <div class="menuInfo">
-                            <h4>
-                                珍珠米饭
-                                <span>粒粒清香，颗颗饱满</span>
-                            </h4>
-                            <p class="appraise">*****（90）月售771份</p>
-                            <p class="price">¥2</p>
-                        </div>
-                        <a href="" class="joinToCar">加入购物车</a>
-                    </li>
-                    <li>
-                        <img src="images/01.jpeg" alt="" />
-                        <div class="menuInfo">
-                            <h4>
-                                珍珠米饭
-                                <span>粒粒清香，颗颗饱满</span>
-                            </h4>
-                            <p class="appraise">*****（90）月售771份</p>
-                            <p class="price">¥2</p>
-                        </div>
-                        <a href="" class="joinToCar">加入购物车</a>
-                    </li>
-                    <li>
-                        <img src="images/01.jpeg" alt="" />
-                        <div class="menuInfo">
-                            <h4>
-                                珍珠米饭
-                                <span>粒粒清香，颗颗饱满</span>
-                            </h4>
-                            <p class="appraise">*****（90）月售771份</p>
-                            <p class="price">¥2</p>
-                        </div>
-                        <a href="" class="joinToCar">加入购物车</a>
-                    </li>
+                    {{/each}}
                 </ul>
-            </div>
-            <div class="floor">
-                <h3>
-                热销
-                <span>大家喜欢吃，才叫真的好吃</span>
-            </h3>
-                <ul>
-                    <li>
-                        <img src="images/01.jpeg" alt="" />
-                        <div class="menuInfo">
-                            <h4>
-                                珍珠米饭
-                                <span>粒粒清香，颗颗饱满</span>
-                            </h4>
-                            <p class="appraise">*****（90）月售771份</p>
-                            <p class="price">¥2</p>
-                        </div>
-                        <a href="" class="joinToCar">加入购物车</a>
-                    </li>
-                    <li>
-                        <img src="images/01.jpeg" alt="" />
-                        <div class="menuInfo">
-                            <h4>
-                                珍珠米饭
-                                <span>粒粒清香，颗颗饱满</span>
-                            </h4>
-                            <p class="appraise">*****（90）月售771份</p>
-                            <p class="price">¥2</p>
-                        </div>
-                        <a href="" class="joinToCar">加入购物车</a>
-                    </li>
-                    <li>
-                        <img src="images/01.jpeg" alt="" />
-                        <div class="menuInfo">
-                            <h4>
-                                珍珠米饭
-                                <span>粒粒清香，颗颗饱满</span>
-                            </h4>
-                            <p class="appraise">*****（90）月售771份</p>
-                            <p class="price">¥2</p>
-                        </div>
-                        <a href="" class="joinToCar">加入购物车</a>
-                    </li>
-                    <li>
-                        <img src="images/01.jpeg" alt="" />
-                        <div class="menuInfo">
-                            <h4>
-                                珍珠米饭
-                                <span>粒粒清香，颗颗饱满</span>
-                            </h4>
-                            <p class="appraise">*****（90）月售771份</p>
-                            <p class="price">¥2</p>
-                        </div>
-                        <a href="" class="joinToCar">加入购物车</a>
-                    </li>
-                </ul>
-            </div>
+                {{/each}}
+            </script>
+
+
+
+
+
         </div>
     </div>
     <!----------------------------------------    /floor   ---------------------------------------->
-
     <!----------------------------------------    footer   ---------------------------------------->
-<footer>
-    <div class="links">
-        <dl>
-            <dt>用户帮助</dt>
-            <dd>订餐须知</dd>
-        </dl>
-        <dl>
-            <dt>商务合作</dt>
-            <dd>原材料厂商</dd>
-            <dd>员工保险</dd>
-            <dd>市场合作</dd>
-            <dd>广告平台</dd>
-        </dl>
-        <dl>
-            <dt>关于我们</dt>
-            <dd>本店介绍</dd>
-            <dd>加入我们</dd>
-            <dd>联系我们</dd>
-        </dl>
-    </div>
-    <div class="aboutUs">
-        <h3>订餐热线：135770*****</h3>
-        <p>关注我们</p>
-    </div>
-    <div class="map">
-
-    </div>
-</footer>
+    <footer>
+        <div class="inner">
+            <div class="links">
+                <dl>
+                    <dt>用户帮助</dt>
+                    <dd>订餐须知</dd>
+                    <dd>生日宴会</dd>
+                    <dd>承包婚庆</dd>
+                </dl>
+                <dl>
+                    <dt>商务合作</dt>
+                    <dd>原材料厂商</dd>
+                    <dd>员工保险</dd>
+                    <dd>市场合作</dd>
+                    <dd>广告平台</dd>
+                </dl>
+                <dl>
+                    <dt>关于我们</dt>
+                    <dd>本店介绍</dd>
+                    <dd>加入我们</dd>
+                    <dd>联系我们</dd>
+                </dl>
+            </div>
+            <div class="aboutUs">
+                <h3>订餐热线：135770*****</h3>
+                <p>
+                    关注我们
+                    <i class="iconfont icon-weixin"></i>
+                    <i class="iconfont icon-weibo-circle"></i>
+                </p>
+            </div>
+            <div class="map">
+            </div>
+        </div>
+    </footer>
     <!----------------------------------------    /footer   ---------------------------------------->
-
-
-
-
-
     <script type="text/javascript">
     </script>
 </body>
