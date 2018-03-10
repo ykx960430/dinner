@@ -1,7 +1,6 @@
 {
   "name": "dinner",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -12,13 +11,24 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1",
-    "gulp-clean-css": "^3.9.2",
+    "gulp-clean-css": "^3.9.3",
     "gulp-connect": "^5.5.0",
     "gulp-htmlmin": "^4.0.0",
     "gulp-livereload": "^3.8.1",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ykx960430/dinner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ykx960430/dinner/issues"
+  },
+  "homepage": "https://github.com/ykx960430/dinner#readme",
+  "description": ""
 }

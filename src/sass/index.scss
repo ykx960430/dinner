@@ -7,6 +7,8 @@ $logoH: 80px;
 $menuImg: 130px;
 $menuLiGap: 20px;
 $sideNav: 100px;
+$allCateH: 130px;
+$sortBoxH: 56px;
 
 body {
     background: #f7f7f7;
@@ -49,44 +51,46 @@ header {
     /*----------------------------------------    /头部导航   ----------------------------------------*/
 }
 
+
+
+
 /*----------------------------------------    goto   ----------------------------------------*/
-.goto{
+
+.goto {
     position: fixed;
     right: 0;
     bottom: 20%;
+    display: none;
 
     width: 40px;
 
-    ul{
+    ul {
 
-        li{
+        li {
             width: 40px;
             height: 40px;
             border-radius: 5px;
             margin-bottom: 3px;
-            background: rgba(0,0,0,0.5);
+            background: rgba(0, 0, 0, 0.5);
             text-align: center;
             cursor: pointer;
 
-            i{
+            i {
                 font-size: 25px;
                 line-height: 40px;
                 color: #fff;
             }
         }
-        li:hover{
+        li:hover {
             background: coral;
         }
     }
 }
 
+
+
+
 /*----------------------------------------    /goto   ----------------------------------------*/
-
-
-
-
-
-
 
 
 /*----------------------------------------    footer   ----------------------------------------*/
@@ -156,22 +160,29 @@ footer {
 
 
 
+
+
+
 /*----------------------------------------    /footer   ----------------------------------------*/
 
 
 /*----------------------------------------    banner   ----------------------------------------*/
 
-.banner .inner{
+.banner .inner {
     height: $bannerH;
     background: #000 url('../images/banner.jpg') no-repeat center center;
 }
+
+
+
 
 
 /*----------------------------------------    /banner   ----------------------------------------*/
 
 
 /*----------------------------------------    shopInfo   ----------------------------------------*/
-.shopInfo{
+
+.shopInfo {
     height: 100px;
     background: url('../images/coffee.jpg');
 
@@ -227,25 +238,103 @@ footer {
         }
     }
 }
+
+
+
+
 /*----------------------------------------    /shopInfo   ----------------------------------------*/
-
-
 
 
 /*----------------------------------------    sortBox   ----------------------------------------*/
 
 .sortBox {
+    width: 100%;
+    height: $sortBoxH;
     .inner {
         height: 50px;
         line-height: 50px;
         padding-bottom: 6px;
         background: #fff;
-        ul {
+        position: relative;
+
+        .sideNav {
+            display: none;
+            position: absolute;
+            margin-top: $sortBoxH;
+            width: $sideNav;
+            left: -$sideNav - 40;
+            text-align: right;
+            padding-right: 20px;
+            border-right: 1px solid #ddd;
+            li {
+                line-height: 42px;
+                width: 80%;
+                position: relative;
+                color: #333;
+            }
+            li:after {
+                content: "";
+                display: block;
+                width: 5px;
+                height: 5px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -15px;
+                background: #ddd;
+                border-radius: 50%;
+            }
+            li.curren,
+            li:hover {
+                color: #0089dc;
+                font-weight: bold;
+            }
+            li.curren::after,
+            li:hover::after {
+                background: #0089dc;
+            }
+        }
+
+
+
+
+
+
+        .searchBar {
             float: left;
             li {
                 color: #333;
                 padding: 0 35px;
                 cursor: pointer;
+                position: relative;
+
+                .allCate {
+                    position: absolute;
+                    top: 56px;
+                    left: 0;
+                    background: #fff;
+                    padding: 12px;
+                    height: $allCateH;
+                    box-sizing: border-box;
+                    display: none;
+
+                    li {
+                        float: left;
+                        width: 165px;
+                        height: 24px;
+                        line-height: 24px;
+                        padding: 0 10px;
+                        color: #666;
+                        cursor: pointer;
+                        margin-top: 10px;
+                    }
+                    li:hover,
+                    .curren {
+                        background: #0089dc;
+                        color: #fff;
+                        border: none;
+                    }
+                }
             }
         }
         ol,
@@ -287,76 +376,10 @@ footer {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-/*----------------------------------------    /sortBox   ----------------------------------------*/
-
-
-/*----------------------------------------    menu   ----------------------------------------*/
-
-.menu {
-    margin-top: 15px;
-    position: relative;
-
-    ul {
-        background: #fff;
-        padding: 12px;
-        overflow: hidden;
-        box-sizing: border-box;
-        li {
-            width: 165px;
-            height: 24px;
-            line-height: 24px;
-            padding: 0 10px;
-            color: #666;
-            cursor: pointer;
-        }
-        li:hover,
-        .curren {
-            background: #0089dc;
-            color: #fff;
-        }
-    }
-    ol {
-        position: absolute;
-        width: $sideNav;
-        left: -$sideNav - 40;
-        text-align: right;
-        padding-right: 20px;
-        border-right: 1px solid #ddd;
-        li{
-            line-height: 42px;
-            position: relative;
-            color: #333;
-        }
-        li:after{
-            content: "";
-            display: block;
-            width: 5px;
-            height: 5px;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            right: -15px;
-            background: #ddd;
-            border-radius: 50%;
-        }
-        li.curren,li:hover{
-            color: #0089dc;
-            font-weight: bold;
-        }
-        li.curren::after,li:hover::after{
-            background: #0089dc;
-        }
-    }
+.sortBoxOnTop {
+    position: fixed;
+    z-index: 999;
+    top: 0;
 }
 
 
@@ -368,7 +391,10 @@ footer {
 
 
 
-/*----------------------------------------    menu   ----------------------------------------*/
+
+
+
+/*----------------------------------------    /sortBox   ----------------------------------------*/
 
 
 /*----------------------------------------    floor   ----------------------------------------*/
@@ -414,15 +440,15 @@ footer {
                         color: #333;
                     }
                     span {
-                            font-size: 12px;
-                            display: block;
-                            width: (($innerW - $menuLiGap - 4) / 2) - $menuImg - 30;
-                            white-space: nowrap;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
-                            font-weight: 600;
-                            color: #99b299;
-                        }
+                        font-size: 12px;
+                        display: block;
+                        width: (($innerW - $menuLiGap - 4) / 2) - $menuImg - 30;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-weight: 600;
+                        color: #99b299;
+                    }
                     .appraise {
                         /* float: left; */
                         color: #99b2d8;
@@ -457,10 +483,9 @@ footer {
         }
     }
 }
-
-
-
-
+.floorBoxMT{
+    margin-top: $sortBoxH;
+}
 
 
 

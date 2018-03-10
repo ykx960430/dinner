@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-03-08 09:49:39
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-03-09 21:00:05
+* @Last Modified time: 2018-03-10 11:47:59
 */
 
 'use strict';
@@ -28,13 +28,32 @@ require(["config"], function(){
          *
          */
         // 搜索栏吸顶
+        var sortBoxOffsetTop = $(".sortBox").offset().top;
         $(window).scroll(function() {
-            console.log($(".sortBox").offset().top);//得到的是距离文档的高度
-            if( $(".sortBox").offset().top <= 0 ){
-                $(".sortBox").css({"position": "fixed"});
-                console.log("111");
+            var sortBoxClientHeight = sortBoxOffsetTop - $(window).scrollTop();
+            //  搜索栏距浏览器的高度 = 搜索栏距文档的高度 - 窗口滚动的高度
+            if( sortBoxClientHeight <= 0  ){
+                $(".sortBox").addClass('sortBoxOnTop');
+                $(".floorBox").addClass("floorBoxMT");
+                // 显示侧边导航
+                $(".sideNav").slideDown();
+                // 回到顶部的盒子显示
+                $(".goto").fadeIn();
+            }else{
+                $(".sortBox").removeClass('sortBoxOnTop');
+                $(".floorBox").removeClass("floorBoxMT");
+                // 隐藏侧边导航
+                $(".sideNav").slideUp();
+                $(".goto").fadeOut();
             }
 
+        });
+        // 鼠标悬停所有商品显示二级菜单
+        $(".searchBar").on('mouseenter', '>li', function(event) {
+            $(this).children('ul').stop(true,false).slideDown('200');
+        });
+        $(".searchBar").on('mouseleave', '>li', function(event) {
+            $(this).children('ul').stop(true,false).slideUp('200');
         });
 
 
