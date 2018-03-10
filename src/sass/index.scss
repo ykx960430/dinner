@@ -9,6 +9,7 @@ $menuLiGap: 20px;
 $sideNav: 100px;
 $allCateH: 130px;
 $sortBoxH: 56px;
+$currenColor: #0089dc;
 
 body {
     background: #f7f7f7;
@@ -287,14 +288,14 @@ footer {
             }
             li.curren,
             li:hover {
-                color: #0089dc;
+                color: $currenColor;
                 font-weight: bold;
                 border: none;
 
             }
             li.curren::after,
             li:hover::after {
-                background: #0089dc;
+                background: $currenColor;
             }
         }
 
@@ -333,7 +334,7 @@ footer {
                     }
                     li:hover,
                     .curren {
-                        background: #0089dc;
+                        background: $currenColor;
                         color: #fff;
                         border: none;
                     }
@@ -352,8 +353,8 @@ footer {
         }
         li:hover,
         .curren {
-            border-bottom: 2px solid #0089dc;
-            color: #0089dc;
+            border-bottom: 2px solid $currenColor;
+            color: $currenColor;
         }
         .searchBox {
             width: 214px;
@@ -405,6 +406,7 @@ footer {
 .floorBox {
     .floor {
         h3 {
+            padding: 50px 0 20px;
             font-size: 16px;
             line-height: 50px;
             color: #333;
@@ -413,6 +415,9 @@ footer {
                 font-weight: normal;
                 color: #999;
             }
+        }
+        h3.curren{
+            color: $currenColor;
         }
         ul {
             overflow: hidden;
@@ -471,7 +476,7 @@ footer {
                     line-height: 22px;
                     color: #fff;
                     display: block;
-                    background: #0089dc;
+                    background: $currenColor;
                     position: absolute;
                     right: 10px;
                     bottom: 10px;
@@ -482,6 +487,9 @@ footer {
                     background: coral;
                     text-decoration: none;
                 }
+            }
+            li:hover{
+                box-shadow:  1px 2px 5px rgba(0,0,0,0.2);
             }
         }
     }
