@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-03-08 09:49:39
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-03-10 11:47:59
+* @Last Modified time: 2018-03-10 14:49:05
 */
 
 'use strict';
@@ -13,11 +13,18 @@ require(["config"], function(){
     require(["jquery", "template"],function($,template){
         $.getJSON("/mock/list.json", function(data){
 
-            let rendDate = {data : data.menus};//取得需要渲染的  楼层  数据
-            // rendDate1 = {cate : menus};//取得需要渲染的  菜品 数据
+            let rendDate = {data : data.menus};
+            //取得需要渲染的  楼层  数据
 
             let html = template("floor", rendDate);
             $(".floor").html(html);
+        })
+
+        $.getJSON("/mock/list.json",function(data){
+            let msg = { data : data.menus };
+            let html = template("side_nav",msg);
+            $(".sideNav").html(html);
+            $(".allCate").html(html);
         })
 
 

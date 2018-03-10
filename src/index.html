@@ -66,36 +66,23 @@
     <!----------------------------------------    sortBox   ---------------------------------------->
     <div class="sortBox">
         <div class="inner">
+            <script type="text/html" id="side_nav">
+                {{each data as lis i}}
+                    {{if i < 1}}
+                        <li class="curren">{{lis.name}}</li>
+                    {{/if}}
+                    {{if i >= 1}}
+                        <li>{{lis.name}}</li>
+                    {{/if}}
+                {{/each}}
+            </script>
             <ol class="sideNav">
-                <li class="curren">热销</li>
-                <li>本店特色</li>
-                <li>女神养颜粥</li>
-                <li>提神营养粥</li>
-                <li>海鲜宴</li>
-                <li>素食主义者</li>
-                <li>川粤蒸品</li>
-                <li>佐食小菜</li>
-                <li>特色点心</li>
-                <li>金樽甘露</li>
-                <li>塞红杏川菜</li>
-                <li>一碗好米</li>
             </ol>
             <ul class="searchBar">
                 <li class="curren">
                     所有商品
                     <ul class="allCate inner">
-                        <li class="curren">热销</li>
-                        <li>本店特色</li>
-                        <li>女神养颜粥</li>
-                        <li>提神营养粥</li>
-                        <li>海鲜宴</li>
-                        <li>素食主义者</li>
-                        <li>川粤蒸品</li>
-                        <li>佐食小菜</li>
-                        <li>特色点心</li>
-                        <li>金樽甘露</li>
-                        <li>塞红杏川菜</li>
-                        <li>一碗好米</li>
+
                     </ul>
                 </li>
                 <li>评价</li>

@@ -271,6 +271,7 @@ footer {
                 width: 80%;
                 position: relative;
                 color: #333;
+                border: none;
             }
             li:after {
                 content: "";
@@ -288,6 +289,8 @@ footer {
             li:hover {
                 color: #0089dc;
                 font-weight: bold;
+                border: none;
+
             }
             li.curren::after,
             li:hover::after {
